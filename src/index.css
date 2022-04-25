@@ -1,0 +1,81 @@
+:root {
+  --clr--primary: rgb(51, 153, 255);
+}
+body {
+  background-color: rgb(144, 238, 144, 0.4);
+}
+* {
+  box-sizing: border-box;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+  font-weight: 400;
+}
+button:focus,
+input:focus,
+textarea:focus {
+  box-shadow: none !important;
+}
+::placeholder {
+  font-size: small;
+}
+/* Searchbar */
+.search {
+  margin-top: 4.5rem !important;
+  user-select: none;
+}
+.searchIcon {
+  background-color: white;
+  border: none;
+  font-size: large;
+  font-weight: lighter !important;
+  border-top: 1px solid skyblue;
+  border-left: 1px solid skyblue;
+  border-bottom: 1px solid skyblue;
+}
+.searchInput {
+  border: none;
+  border-top: 1px solid skyblue;
+  border-right: 1px solid skyblue;
+  border-bottom: 1px solid skyblue;
+}
+/* Card */
+.singleCard {
+  height: 20rem;
+  z-index: 1;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  min-width: 14rem !important;
+}
+img {
+  height: 7rem;
+  width: 90% !important;
+  margin: auto !important;
+  user-select: none;
+}
+.singleCard:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+.star {
+  font-size: 1.1rem !important;
+}
+.nav {
+  font-size: 1.1rem !important;
+}
+.home,
+.star {
+  font-size: 1.5rem !important;
+}
+
+@media screen and (max-width: 480px) {
+  .home,
+  .star {
+    font-size: 1rem !important;
+  }
+  .nav {
+    font-size: 1rem !important;
+  }
+}
