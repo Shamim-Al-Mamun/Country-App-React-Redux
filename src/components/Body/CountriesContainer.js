@@ -32,7 +32,7 @@ function CountriesContainer() {
   const { favouritesList } = FavouriteCountriesStatus;
 
   useEffect(() => {
-    //fetch data
+    //fetching data
     dispatch(fetchCountries());
   }, []);
 
@@ -190,7 +190,7 @@ function CountriesContainer() {
             (country) => country.name.common !== name
           );
           //removing countries from all
-          //adding to the favourites
+          //adding countries to favourites
           dispatch(filterCountryList(filter));
           console.log(filteredCountries);
         }
@@ -199,7 +199,7 @@ function CountriesContainer() {
         const filter = displayCountries.filter(
           (country) => country.name.common === name
         );
-        //adding to the favourites
+        //adding countries to the favourites
         dispatch(favouriteCountryEntry([...favouritesList, filter[0]]));
       };
       return (

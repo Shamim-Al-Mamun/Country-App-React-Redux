@@ -53,6 +53,7 @@ function FavouriteCountriesContainer() {
         (country) => country.name.common === name
       );
       //removing countries from favourites
+      //adding countries to home
       dispatch(restoreFavouriteCountry([...tempCountries, filter[0]]));
       console.log(tempCountries);
     };

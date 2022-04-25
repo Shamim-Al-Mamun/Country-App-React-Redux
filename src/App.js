@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import CountriesContainer from "./components/Body/CountriesContainer";
-import FavouriteCountriesContainer from "./components/Body/FavouriteCountriesContainer";
+import Nav from "./components/Header/Nav";
 import Title from "./components/Header/Title";
 import SearchBar from "./components/Header/SearchBar";
-import Nav from "./components/Header/Nav";
+import CountriesContainer from "./components/Body/CountriesContainer";
+import FavouriteCountriesContainer from "./components/Body/FavouriteCountriesContainer";
 
 const App = () => {
   return (
